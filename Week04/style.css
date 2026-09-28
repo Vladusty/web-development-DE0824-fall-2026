@@ -1,12 +1,32 @@
+/*
+Style sheet for the week 04 HTML file.
+*/
+
+body {
+    /*This if for the body*/
+    background-color: lightgray;
+}
 
 h1 {
-    color: blue;
+    color: blue; /*ctrl + backslash (/) - fast commenting*/
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 40px;
 }
+
+.cool-paragraph {
+    background-color: rgb(255, 247, 0);
+    color: red; /* !important; avoid using !important unless necessary */
+}
+
 p {
     color: rgb(128, 0, 0);
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+}
+
+#additional-info {
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
 }

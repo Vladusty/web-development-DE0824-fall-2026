@@ -39,3 +39,11 @@ body {
     top: 5px;
     left: 110px;
 }
+
+/* let's add a hover property to the rounded container */
+.rounded-container:hover {
+    background-color: lightgray;
+    border-color: #ff0000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transform: translate(2px, 2px);
+}

@@ -2,3 +2,11 @@ body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
+
+/* reminder that record means selecting all elements with the class "record"*/
+.record {
+    background-color: #e3e4d5;
+    color: #243b53;
+    font-size: 18px;
+    /*display: none;*/
+}

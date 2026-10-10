@@ -1,11 +1,53 @@
 body {
-    /*This if for the body*/
     background-color: #EAF4F8;
 }
 
 h1 {
-    color: #1F4E79; /*ctrl + backslash (/) - fast commenting*/
+    color: #1F4E79;
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 80px;
+}
+
+h2 {
+    color: #1F4E79; 
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+}
+
+h3 {
+    color: #1F4E79;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+img {
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.header-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.return-to-top {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+li {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
 }

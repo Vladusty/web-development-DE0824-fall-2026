@@ -1,0 +1,94 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100px 100px 100px;
+    gap: 1rem;
+    /* now we can use grid-template-areas to define the layout of our collections */
+    grid-template-areas:
+        "manuscripts newspapers photographs maps"
+        "letters letters books books"
+        "letters letters books books";
+}
+
+.collection {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1);
+    border: 3px solid #002aff;
+}
+
+/* let's add hover effect to the collection items */
+/* hover is a pseudo-class that applies styles when the user hovers over an element */
+.collection:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    background-color: #ff0000;
+}
+
+/* We can introduce screen width based media queries
+ We can think of it as an if statement for CSS
+ If the screen width is less than or equal to 768px, apply these styles */
+ @media (max-width: 768px) {
+    .collections {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "manuscripts newspapers"
+            "photographs maps"
+            "letters letters"
+            "books books";
+    }
+
+    .collection {
+        background-color: #c8ff00;
+    }
+}
+
+ @media (max-width: 480px) {
+    .collections {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "manuscripts"
+            "newspapers"
+            "photographs"
+            "maps"
+            "letters"
+            "books";
+    }
+
+    .collection {
+        background-color: #a80d08;
+    }
+}
+
+/* Let's assign grid area to each collection*/
+.manuscripts {
+    grid-area: manuscripts;
+}
+
+.newspapers {
+    grid-area: newspapers;
+}
+
+.photographs {
+    grid-area: photographs;
+}
+
+.maps {
+    grid-area: maps;
+}
+
+.letters {
+    grid-area: letters;
+}
+
+.books {
+    grid-area: books;
+}

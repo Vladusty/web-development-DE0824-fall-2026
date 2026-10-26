@@ -1,0 +1,59 @@
+body {
+    background-color: #b1b1b1;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+.archive-card {
+    background-color: #b1b1b1;
+    border: 2px, solid #b1b1b1;
+    /* transition: background-color 250ms ease; */
+
+    transition:
+        background-color 250ms ease,
+        transform 250ms ease,
+        box-shadow 250ms ease;
+
+}
+
+.archive-card:hover {
+    /* transform: translateY(-10px); */
+    background-color: #0488f5;
+    transform: scale(1.5);
+    transition: background-color 500ms ease, transform 500ms ease;
+
+}
+
+.box2 {
+    background-color: red;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    animation: reveal-record 2800ms ease-out both;
+}
+
+.box2:hover {
+    animation: reveal-record 2800ms ease-out both;
+}
+
+@keyframes reveal-record {
+    from {
+        opacity: 0;
+        transform: translateX(-35px);
+    }
+
+    /* middle animation (like a keyframe) */
+    50% {
+        opacity: 0.5;
+        transform: translateX(-15px);
+        transform: translateY(-15px);
+        background-color:#0488f5;
+        rotate: 20deg;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        rotate: 10deg;
+    }
+}
